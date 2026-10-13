@@ -1,0 +1,113 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: relative; /* anchor for mobile menu */
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  color: var(--brand);
+}
+
+.login {
+  background: transparent;
+  border: 1px solid var(--brand);
+  color: var(--brand);
+  padding: 0.4rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.brandName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem; /* less side padding frees room for title */
+  }
+
+  .brandName {
+    font-size: 0.85rem; /* smaller so title fits beside logo and burger */
+  }
+}

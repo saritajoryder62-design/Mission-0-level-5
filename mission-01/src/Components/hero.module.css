@@ -1,0 +1,72 @@
+.hero {
+  /* dark overlay on top of photo so white text stays readable */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/hero-bg.png") center 35% / cover no-repeat;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.5rem); /* scales with screen */
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 12ch; /* breaks onto 2 lines like wireframe */
+  margin: 0 0 2.5rem;
+}
+
+.search {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto; /* centres search bar like wireframe */
+}
+
+.input {
+  flex: 1; /* input fills remaining space */
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.button {
+  padding: 0.9rem 2rem;
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #b81c14;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 320px;
+    padding: 2rem 1rem;
+  }
+
+  .search {
+    flex-direction: column; /* stack input above button */
+    gap: 0.5rem;
+  }
+
+  .input,
+  .button {
+    border-radius: 4px;
+  }
+}

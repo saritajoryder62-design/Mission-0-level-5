@@ -8,13 +8,12 @@ import "./App.css";
 function App() {
   return (
     <>
+      <Header />
       <main>
-        <Header />
         <Hero />
         <Cardgrid />
       </main>
-
-      <footer />
+      <Footer />
     </>
   );
 }

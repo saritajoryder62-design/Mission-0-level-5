@@ -13,7 +13,7 @@ export default function Footer() {
             className={styles.logo}
           />
           <p>
-            The latest marketing news, events and insights from across Aotearoa.
+            The latest marketing news for Mission 0, for Mission Ready Aotearoa.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
 
       <p className={styles.bottom}>
-        © 2026 Marketing Association NZ. All rights reserved.
+        © 2026 Marketing Association NZ. All rights reserved. Images from pexles
       </p>
     </footer>
   );

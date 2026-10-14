@@ -10,7 +10,7 @@ export default function Hero() {
         <form className={styles.search} onSubmit={(e) => e.preventDefault()}>
           <input
             type="search"
-            placeholder="Search articles..."
+            placeholder=" Lets search articles."
             aria-label="Search articles"
             className={styles.input}
           />

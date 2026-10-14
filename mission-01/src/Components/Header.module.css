@@ -1,3 +1,5 @@
+/* 1 rem is about 16px & 2rem is about 32px, my padding for desktop header is 1rem top and bttm , then 2 rem left and right */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -51,7 +53,7 @@
   background: var(--brand);
   color: #fff;
 }
-
+/* buger icon is text */
 .burger {
   display: none;
   background: none;
@@ -59,13 +61,13 @@
   font-size: 1.75rem;
   cursor: pointer;
 }
-
-/* Mobile */
+/* I used media querys its a css rule "only apply hese styles when a condition is true eg (maxwidth: 768px*/
+/* Mobile setttings to make the page responsive, settng my break point to 768px for the burger to show */
 @media (max-width: 768px) {
   .burger {
     display: block;
   }
-
+  /* nav settings for normal desktop display */
   .nav {
     display: none;
     position: absolute;

@@ -1,6 +1,6 @@
 .footer {
-  background: var(--dark);
-  color: #ccc;
+  background: black;
+  color: #ec3d3d;
   margin-top: 4rem;
 }
 
@@ -57,7 +57,7 @@
   padding: 1.25rem 1rem;
   margin: 0;
   font-size: 0.85rem;
-  color: #888;
+  color: #f2eeee;
 }
 
 @media (max-width: 600px) {

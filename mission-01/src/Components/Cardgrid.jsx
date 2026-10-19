@@ -1,5 +1,5 @@
 import styles from "./Cardgrid.module.css";
-import article from "../assets/data/articles";
+import articles from "../assets/data/articles";
 
 function Cardgrid() {
   return (
@@ -7,7 +7,7 @@ function Cardgrid() {
       <h2 className={styles.heading}>The Latest Marketing News</h2>
 
       <div className={styles.grid}>
-        {article.map((article) => (
+        {articles.map((article) => (
           <article key={article.id} className={styles.card}>
             <img
               src={article.image}

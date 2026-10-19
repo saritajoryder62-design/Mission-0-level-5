@@ -28,7 +28,7 @@
 .search {
   display: flex;
   max-width: 600px;
-  margin: 0 auto; /* centres search bar like wireframe */
+  margin: 0 auto;
 }
 
 .input {

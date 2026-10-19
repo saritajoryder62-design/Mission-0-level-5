@@ -25,7 +25,8 @@ function Header() {
         aria-label="Toggle menu"
         aria-expanded={open}
       >
-        {open ? "✕" : "☰"}
+        {/* {open ? "✕" : "☰"} */}
+        {open ? "\u2715" : "\u2630"}
       </button>
       {/* Nav open class */}
       <nav className={open ? `${styles.nav} ${styles.navOpen}` : styles.nav}>
